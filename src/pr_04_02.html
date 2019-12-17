@@ -1,0 +1,29 @@
+<html>
+	<body>
+		<svg width="1000" height="600">
+			<linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0%" stop-color="MidnightBlue"/>
+				<stop offset="100%" stop-color="SteelBlue"/>
+			</linearGradient>
+			<radialGradient id="sky" cx="0.45" cy="0.85" r="0.6">
+				<stop offset="40%" stop-color="Gold"/>
+				<stop offset="100%" stop-color="DarkOrange"/>
+			</radialGradient>
+			<filter id="blur">
+				<feGaussianBlur stdDeviation="3"/>
+			</filter>
+			<g id="seagull">
+				<polyline points="50,53 60,48 70,50 80,58 90,50 100,48 110,53 
+				110,55 100,50 90,52 80,60 70,52 60,50 50,55" style="fill:black; stroke: black; stroke-width:3;"/>
+			</g>
+			<rect x="0" y="0" width="1000" height="350" fill="url(#sky)"/>
+			<rect x="0" y="350" width="1000" height="250" fill="url(#sea)"/>
+			<use href="#seagull" transform="translate(200 150) rotate(10) scale(0.3 0.3)"
+			filter="url(#blur)"/>
+			<use href="#seagull" transform="translate(700 150) rotate(-20) scale(0.5 0.5)"
+			filter="url(#blur)"/>
+			<use href="#seagull" transform="translate(400 250) rotate(5) scale(0.4 0.4)"
+			filter="url(#blur)"/>
+		</svg>
+	</body>
+</html>

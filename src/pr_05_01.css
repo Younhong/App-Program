@@ -1,0 +1,27 @@
+		body {
+			background-color: black;
+			background-image: url(../images/nasa_earth.jpg);
+			background-position: right;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+		
+		h1,h2,p {
+			color: white;
+			font-family: "Times New Roman";
+		}
+		
+		sup {
+			color: gray;
+		}
+		
+		p {
+			margin-left: 50px;
+			font-size: 150%;
+			width: 30%;
+			text-align: justify;
+		}
+		
+		q {
+			color: yellow;
+		}
