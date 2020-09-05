@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                text-align: center;
+            }
+            input {
+                width: 50px;
+                text-align: center;
+            }
+        </style>
+        <script>
+            function calculate() {
+                let userInput = document.getElementById('userInput');
+                let data = document.getElementsByTagName("td");
+                let x = null, y = parseFloat(userInput.value), k = 0;
+
+                x = y + 2; data[++k].innerHTML = x; data[++k].innerHTML = y; ++k;
+                x = y - 2; data[++k].innerHTML = x; data[++k].innerHTML = y; ++k;
+                x = y * 2; data[++k].innerHTML = x; data[++k].innerHTML = y; ++k;
+                x = y / 2; data[++k].innerHTML = x; data[++k].innerHTML = y; ++k;
+                x = y % 2; data[++k].innerHTML = x; data[++k].innerHTML = y; ++k;
+                x = ++y; data[++k].innerHTML = y; data[++k].innerHTML = x; ++k;
+                x = y++; data[++k].innerHTML = y; data[++k].innerHTML = x; ++k;
+                x = --y; data[++k].innerHTML = y; data[++k].innerHTML = x; ++k;
+                x = y--; data[++k].innerHTML = y; data[++k].innerHTML = x; ++k;
+            }
+        </script>
+    </head>
+    <body>
+        <table id="myTable">
+            <tr><th>Example</th><th>Result in y</th><th>Result in x</th></tr>
+            <tr><td>x = y + 2</td><td></td><td></td></tr>
+            <tr><td>x = y - 2</td><td></td><td></td></tr>
+            <tr><td>x = y * 2</td><td></td><td></td></tr>
+            <tr><td>x = y / 2</td><td></td><td></td></tr>
+            <tr><td>x = y % 2</td><td></td><td></td></tr>
+            <tr><td>x = ++y</td><td></td><td></td></tr>
+            <tr><td>x = y++2</td><td></td><td></td></tr>
+            <tr><td>x = --y</td><td></td><td></td></tr>
+            <tr><td>x = y--</td><td></td><td></td></tr>
+        </table>
+        <p>Input the y value: <input value="5" id="userInput"></p>
+        <button onclick="calculate()">Calculate!</button>
+    </body>
+</html>

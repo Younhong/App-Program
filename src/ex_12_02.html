@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            input {
+                width: 100px;
+                text-align: center;
+            }
+        </style>
+        <script>
+            function myFunction() {
+                let myInput = document.getElementById("myInput");
+                let n = parseFloat(myInput.value);
+                let i = 1; result = "";
+                while (i < 10) {
+                    result += n + " * " + i + " = " + (n*i) + "<br>";
+                    ++i;
+                }
+                let myHeading = document.getElementById("myHeading")
+                myHeading.innerHTML = result;
+            }
+        </script>
+    </head>
+    <body>
+        <p>Input a number: <input type="text" value="2" id="myInput"></p>
+        <button onclick="myFunction()">Generate a multiplication table.</button>
+        <h1 id="myHeading"></h1>
+    </body>
+</html>

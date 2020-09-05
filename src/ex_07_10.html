@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            td {
+                border: 1px solid black;
+            }
+            div {
+                width: 200px;
+                height: 200px;
+                color: black;
+                text-align: center;
+            }
+            div.default {
+                background-image: radial-gradient(
+                    at 25% 50%, yellow, red, white 100%);
+            }
+            div.cs {
+                background-image: radial-gradient(
+                    closest-side at 25% 50%, yellow, red, white 100%);
+            }
+            div.fs {
+                background-image: radial-gradient(
+                    farthest-side at 25% 50%, yellow, red, white 100%);
+            }
+            div.cc {
+                background-image: radial-gradient(
+                    closest-corner at 25% 50%, yellow, red, white 100%);
+            }
+            div.fc {
+                background-image: radial-gradient(
+                    farthest-corner at 25% 50%, yellow, red, white 100%);
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><div class="default"><h3>Default</h3></div></td>
+                <td><div class="cs"><h3>closest-side</h3></div></td>
+                <td><div class="fs"><h3>farthest-side</h3></div></td>
+                <td><div class="cc"><h3>closest-corner</h3></div></td>
+                <td><div class="fc"><h3>farthest-corner</h3></div></td>
+            </tr>
+        </table>
+    </body>
+</html>

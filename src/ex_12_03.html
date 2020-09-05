@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            input {
+                width: 100px;
+                text-align: center;
+            }
+        </style>
+        <script>
+            function myFunction() {
+                let myInput = document.getElementById("myInput");
+                let myHeading = document.getElementById("myHeading");
+                if (myInput.value == "Handong") {
+                    myHeading.innerHTML = "Hi, Handong!<br>";
+                }
+                else {
+                    myHeading.innerHTML = "Nice to meet you, " 
+                    + myInput.value + "!<br>";
+                }
+                myHeading.innerHTML += "How are you?<br>";
+            }
+        </script>
+    </head>
+    <body>
+        <p>Who are you <input type="text" id="myInput"></p>
+        <button onclick="myFunction()">Say Hello!</button>
+        <h1 id="myHeading"></h1>
+    </body>
+</html>

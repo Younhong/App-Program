@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            td { width: 300px; }
+            div { height: 150px; }
+            div.default {
+                background-image: linear-gradient(
+                    powderblue, lightpink
+                );
+            }
+            div.quarter1 {
+                background-image: linear-gradient(
+                    powderblue 25%, lightpink 100%
+                );
+            }
+            div.half1 {
+                background-image: linear-gradient(
+                    powderblue 50%, lightpink 100%
+                );
+            }
+            div.half2 {
+                background-image: linear-gradient(
+                    powderblue 0%, lightpink 50%
+                );
+            }
+            div.quarter2 {
+                background-image: linear-gradient(
+                    powderblue 0%, lightpink 25%
+                );
+            }
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><div class="default"><p>powderblue 0%, lightpink 100%</p></div></td>
+                <td><div class="quarter1"><p>powderblue 25%, lightpink 100%</p></div></td>
+                <td><div class="half1"><p>powderblue 50%, lightpink 100%</p></div></td>
+            </tr>
+            <tr>
+                <td><div class="default"><p>powderblue 0%, lightpink 100%</p></div></td>
+                <td><div class="half2"><p>powderblue 0%, lightpink 50%</p></div></td>
+                <td><div class="quarter2"><p>powderblue 0%, lightpink 25%</p></div></td>
+            </tr>
+        </table>
+    </body>
+</html>
