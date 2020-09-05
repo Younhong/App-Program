@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <svg height="100%" width="100%">
+            <filter id="f1">
+                <feGaussianBlur stdDeviation="4"/>
+            </filter>
+            <filter id="f2">
+                <feGaussianBlur stdDeviation="8"/>
+            </filter>
+            <circle id="my_circle" cx="160" cy="160" r="80" fill="green" />
+            <use x="200" href="#my_circle" filter="url(#f1)"/>
+            <use x="400" href="#my_circle" filter="url(#f2)"/>
+        </svg>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <svg width="100%" height="100%">
+            <filter id="f1"><feOffset dx="10" dy="10" /></filter>
+            <filter id="f2"><feOffset dx="20" dy="20" /></filter>
+            <filter id="f3"><feOffset dx="30" dy="30" /></filter>
+            <filter id="f4"><feOffset dx="40" dy="40" /></filter>
+
+            <rect x="10" y="10" width="200" height="200" id="my_rect" stroke="black" fill="powderblue"/>
+            <use href="#my_rect" filter="url(#f1)"/>
+            <use href="#my_rect" filter="url(#f2)"/>
+            <use href="#my_rect" filter="url(#f3)"/>
+            <use href="#my_rect" filter="url(#f4)"/>
+        </svg>
+    </body>
+</html>

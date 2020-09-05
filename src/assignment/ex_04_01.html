@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <svg width="100%" height="100%">
+            <rect x="0" y="0" width="100%" height="100%" fill="powderblue"/>
+            <defs>
+                <g id="balloon" transform="rotate(45)">
+                    <rect x="0" y="0" width="100" height="100" />
+                    <circle cx="0" cy="0" r="100" />
+                    <line x1="100" y1="100" x2="200" y2="200" stroke="black" stroke-width="3" />
+                </g>
+            </defs>
+            <use href="#balloon" x="120" y="120" fill="pink"/>
+            <use href="#balloon" x="400" y="150" fill="blue"/>
+            <use href="#balloon" x="250" y="200" fill="red"/>
+            <text fill="white" font-size="80" stroke="black">
+                <tspan x="85" y="160">H</tspan>
+                <tspan x="215" y="240">G</tspan>
+                <tspan x="365" y="190">U</tspan>
+            </text>
+        </svg>
+    </body>
+</html>
