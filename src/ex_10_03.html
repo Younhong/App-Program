@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function update() {
+                let headings = document.getElementsByTagName("h1");
+                let headingNum = document.getElementById("headingNum");
+                let headingColor = document.getElementById("headingColor");
+                headings[headingNum.value].setAttribute(
+                    "style", "color:" + headingColor.value);
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style="color:black">Heading 0</h1>
+        <h1 style="color:blue">Heading 1</h1>
+        <h1 style="color:green">Heading 2</h1>
+        <h1 style="color:brown">Heading 3</h1>
+        <p>Heading number (0~3): <input type="text" value="0" id="headingNum"></p>
+        <p>Heading Color: <input type="text" value="black" id="headingColor"></p>
+        <button onclick="update()">Update</button>
+    </body>
+</html>

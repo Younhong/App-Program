@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+            let var1 = 10;
+            function myFunction() {
+                let var2 = 10;
+                let para = document.getElementById("myPara");
+                para.innerHTML = var1 + " " + var2;
+                var1 = var1 + 10;
+                var2 = var2 + 10;
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="myFunction()">Click me!</button>
+        <p id="myPara"></p>
+    </body>
+</html>

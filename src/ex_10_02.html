@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function myFunction() {
+                let fruits = ['apple.jpg', 'banana.jpg', 'orange.jpg'];
+                let myInput = document.getElementById("myInput");
+                let myImage = document.getElementById("myImage");
+                myImage.src = "images/" + fruits[myInput.value];
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Input a number in the range from 0 to 2</h2>
+        <input type="text" id="myInput">
+        <button onclick="myFunction()">Enter</button>
+        <br>
+        <img id="myImage">
+    </body>
+</html>

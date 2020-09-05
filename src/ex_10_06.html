@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            let array = [];
+            function add() {
+                let input = document.getElementById("myInput");
+                let paragraph = document.getElementById("myParagraph");
+
+                array.push(input.value);
+                paragraph.innerHTML = array;
+                input.value = "";
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="myInput">
+        <button onclick="add()">Add</button>
+        <h3>List items:</h3>
+        <p id="myParagraph"></p>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+            function check() {
+                let array= ['apple', 'banana', 'orange'];
+                let input = document.getElementById("myInput");
+                let answer = document.getElementById("myAnswer");
+
+                answer.innerHTML = array.includes(input.value);
+            }
+        </script>
+    </head>
+    <body>
+        Is it true that you have a/an <input type="text" id="myInput"> ?
+        <button onclick="check()">Submit</button>
+        <h3 id="myAnswer"></h3>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            let array = ['cat', 'dog', 'dove'];
+            document.write("array: " + array + "<br>");
+            document.write("array.length: " + array.length + "<br>");
+            
+            let newLength = array.push("squirrel");
+            document.write("array: " + array + "<br>");
+            document.write("newLength: " + newLength + "<br>");
+            document.write("array.indexOf('dove'): " + array.indexOf(
+                'dove') + "<br>");
+            document.write("array.includes('squirrel'): " + array.includes(
+                'squirrel') + "<br>")
+
+            let removed = array.pop();
+            document.write("removed: " + removed + "<br>");
+            document.write("array: " + array + "<br>");
+        </script>
+    </head>
+    <body></body>
+</html>
